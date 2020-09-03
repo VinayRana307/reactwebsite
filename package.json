@@ -1,7 +1,7 @@
 {
   "name": "reactwebsite",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://VinayRana307.github.io/reactwebsite",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -11,6 +11,8 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
