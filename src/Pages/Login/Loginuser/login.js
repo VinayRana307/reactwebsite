@@ -63,23 +63,18 @@ class HomePage extends Component {
  ];
 		return (
 			<div>
-			<div className="navBar">
-					<button onClick={this.Toggle}>
-						<FaAlignRight />
-					</button>
-					<ul className={this.state.toggle ? "links show-nav" : "links"}>
-						{
-							li.map((objLink, i) => {
-								return ( <li key={i}><a href={objLink.link}>{objLink.text}</a></li> )
-							})
-						}
-					</ul>
-			</div>
-				{/*<Typical className="TyicalTxt"
-					steps={['Hello,', 1000, 'Hello, My name is vinay kumar', 500, 'My age is 22 years old ...', 1000, 'I am working as on Web Development', 500]}
-					loop={Infinity}
-					wrapper="p"
-				/>*/}
+				<div className="navBar">
+						<button onClick={this.Toggle}>
+							<FaAlignRight />
+						</button>
+						<ul className={this.state.toggle ? "links show-nav" : "links"}>
+							{
+								li.map((objLink, i) => {
+									return ( <li key={i}><a href={objLink.link}>{objLink.text}</a></li> )
+								})
+							}
+						</ul>
+				</div>
 				<div className="slide_div">
 					<Slide easing="ease">
 						<div className="each-slide">
@@ -104,23 +99,39 @@ class HomePage extends Component {
 						</div>
 					</Slide>
 				</div>
-				<div className="photo_gallery_heading">
-					<h3>Photo Gallery</h3>
-				</div>
+				<div className="photo_gallery">
+					<div className="photo_gallery_heading">
+						<h3>Photo Gallery</h3>
+					</div>
+					<div className="row text-center art_rows">
+						<div className="col-md-4 col-sm-12">
+							<div className="box_container">
+								<img src={image1} className="image"/>
+								<div className="middle">
+									<div className="text">Art 1</div>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-4 col-sm-12">
+							<div className="box_container">
+								<img src={image4} className="image"/>
+								<div className="middle">
+									<div className="text">Art 2</div>
+								</div>
+							</div>
+						</div>
+						<div className="col-md-4 col-sm-12">
+							<div className="box_container">
+								<img src={image5} className="image"/>
+								<div className="middle">
+									<div className="text">Art 3</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
 			</div>
 		)
 	}
 }
-export const RegisterUser = [
-	{
-		label: 'Sign up',
-		to: '#/signup/registeruser',
-	},
-];
-export const ForgotPassword = [
-	{
-		label: 'Forgot Password',
-		to: '#/foregetpassword/resetpassword',
-	},
-];
 export default HomePage;
