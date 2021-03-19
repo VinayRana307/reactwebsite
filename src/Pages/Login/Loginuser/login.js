@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MetisMenu from 'react-metismenu';
-import { FaAlignRight } from 'react-icons/fa';
+import { FaAlignRight, FaClosedCaptioning } from 'react-icons/fa';
 import { Row, FormGroup, Button, HelpBlock } from 'react-bootstrap';
 import { Label, Input} from 'reactstrap';
 import 'react-slideshow-image/dist/styles.css'
@@ -14,10 +14,11 @@ import image5 from "../../../assets/images/homepage/image5.jpg"
 class HomePage extends Component {
 		state = {
 			formData: {}, 
-			toggle:false
+			toggle:false,
+			icon:true,
 		}
     Toggle = () => {
-        this.setState({toggle:!this.state.toggle})
+        this.setState({toggle:!this.state.toggle,icon:false})
     }
 	handleInputChange = (event) => {
 		const target = event.target;
@@ -103,8 +104,8 @@ class HomePage extends Component {
 						</div>
 					</Slide>
 				</div>
-				<div className="photo_gallery">
-					<h1 syyle={{textAlign:'center'}}>Photo Gallery</h1>
+				<div className="photo_gallery_heading">
+					<h3>Photo Gallery</h3>
 				</div>
 			</div>
 		)
