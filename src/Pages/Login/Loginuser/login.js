@@ -50,6 +50,14 @@ class HomePage extends Component {
             {
                 link: "#/contact",
                 text:"Contact us"
+            },
+			{
+                link: "#/login",
+                text:"Sign In"
+            },
+			{
+                link: "#/contact",
+                text:"Sign Up"
             }
  ];
 		return (
@@ -94,6 +102,9 @@ class HomePage extends Component {
 							</div>
 						</div>
 					</Slide>
+				</div>
+				<div className="photo_gallery">
+					<h1 syyle={{textAlign:'center'}}>Photo Gallery</h1>
 				</div>
 			</div>
 		)
