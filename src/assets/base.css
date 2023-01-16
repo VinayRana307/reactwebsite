@@ -95,7 +95,15 @@ font-weight: 400;
 .art_rows {
 	width:100%;
 }
-
+.footer{
+	background-color:gainsboro;
+	color:black;
+	width:100%;
+	margin:10px 0px;
+	height:40px;
+	vertical-align:center;
+	padding:6px 0px;
+}
 
 /* Media screen size */
 @media screen and (min-width: 768px) {
@@ -118,4 +126,49 @@ font-weight: 400;
   .each-slide > div{
     height:200px;
   }  
+}
+.Questions{
+  text-align: left;
+  margin: 0% 0% 0% 5%;
+}
+h1{
+  color:purple;
+}
+.answer{
+  display: contents;
+  color:red;
+}
+.intro{
+  font-size: 20px;
+  margin:4px 0px 0px 0px;
+}
+#vinay{
+  color:blue;
+}
+#amit{
+  color:magenta;
+}
+.link{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 4;
+    background-color: honeydew;
+}
+.heading{
+  text-align: center;
+  margin:2% 0%;
+}
+.homelink{
+  background-color: white;
+  padding: 10px 10px;
+  color:#ffffff;
+  margin:0% 0% 0% 4%; 
+  cursor: pointer;
+  text-decoration: none;
+}
+.homelink a:hover{
+  background-color: red;
+  text-decoration: none;
+
 }
