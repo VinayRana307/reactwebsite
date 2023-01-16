@@ -59,6 +59,10 @@ class HomePage extends Component {
 			{
                 link: "#/contact",
                 text:"Sign Up"
+            },
+			{
+                link: "#/msword",
+                text:"MS Word"
             }
  ];
 		return (
@@ -129,6 +133,9 @@ class HomePage extends Component {
 							</div>
 						</div>
 					</div>
+				</div>
+				<div className="footer text-center">
+					This is footer
 				</div>	
 			</div>
 		)
