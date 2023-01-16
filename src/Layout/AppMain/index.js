@@ -10,6 +10,7 @@ const Signup = lazy(() 		=> import('../../Pages/Signup'));
 //const Properties = lazy(() 		=> import('../../Pages/ViewProperty'));
 //const ForegetPassword = lazy(() 	=> import('../../Pages/ForegetPassword'));
 const Elements = lazy(() 	=> import('../../Pages/Elements/'));
+const MS_word = lazy(() 	=> import('../../Pages/Questions/MS_Word/MS_Word'));
 
 const AppMain = () => {
     return (
@@ -41,10 +42,10 @@ const AppMain = () => {
                 </div>
                 
             }>
-                <Route path="/School" component={HomePage}/>
+                <Route path="/quiz" component={HomePage}/>
             </Suspense>
             <Route exact path="/" render={() => (
-                <Redirect to="/School"/>
+                <Redirect to="/quiz"/>
             )}/>
 
 
@@ -79,6 +80,22 @@ const AppMain = () => {
             }>
                 <Route path="/Signup" component={Signup}/>
             </Suspense>
+
+            {/* ms word */}
+
+            <Suspense fallback={
+                <div className="loader-container">
+                    <div className="loader-container-inner">
+                        <h6 className="mt-3">
+                            Please wait.
+                            <small></small>
+                        </h6>
+                    </div>
+                </div>
+            }>
+                <Route path="/msword" component={MS_word}/>
+            </Suspense>
+
             <ToastContainer/>
         </Fragment>
     )

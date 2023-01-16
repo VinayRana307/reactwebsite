@@ -59,6 +59,10 @@ class HomePage extends Component {
 			{
                 link: "#/contact",
                 text:"Sign Up"
+            },
+			{
+                link: "#/msword",
+                text:"MS Word"
             }
  ];
 		return (

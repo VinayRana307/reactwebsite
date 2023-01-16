@@ -119,3 +119,49 @@ font-weight: 400;
     height:200px;
   }  
 }
+.heading{
+  text-align: center;
+  margin: 2% 0%;
+  color:red;
+}
+.Questions{
+  text-align: left;
+  margin: 0% 0% 0% 5%;
+}
+h1{
+  color:purple;
+}
+.answer{
+  display: contents;
+  color:red;
+}
+.intro{
+  font-size: 20px;
+  margin:4px 0px 0px 0px;
+}
+#vinay{
+  color:blue;
+}
+#amit{
+  color:magenta;
+}
+.link{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 4;
+    background-color: honeydew;
+}
+.homelink a{
+  background-color: blue !important;
+    color: #ffffff;
+    text-decoration: none !important;
+    padding:10px;
+    margin:20px;
+}
+.homelink a:hover{
+  background-color: black !important;
+    color: #ffffff;
+    text-decoration: none !important;
+    padding:10px;
+}
